@@ -13,11 +13,11 @@ spring:
             - StripPrefix=1
           uri: lb://translate
 eureka:
-  instance:
-    hostname: localhost
   client:
+    healthcheck:
+      enabled: true
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:8000/eureka/
+      defaultZone: http://localhost:8000/eureka/
 
 # ===========================================================================================
 logging.level.ROOT: INFO
