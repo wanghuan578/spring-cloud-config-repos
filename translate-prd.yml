@@ -4,7 +4,16 @@ spring:
     url: jdbc:mysql://localhost:3306/ffmpeg?useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: spirit
-    
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      naming.physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        default_schema: MYSQL
 eureka:
   instance:
     hostname: localhost
