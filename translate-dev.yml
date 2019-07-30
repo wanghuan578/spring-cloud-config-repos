@@ -15,6 +15,14 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
         default_schema: MYSQL
+        
+  rabbitmq:
+      host: localhost
+      port: 5672
+      username: root
+      password: spirit
+      publisher-confirms: true
+      virtual-host: /
     
 eureka:
   instance:
