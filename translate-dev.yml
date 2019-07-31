@@ -23,6 +23,18 @@ spring:
       password: spirit
       publisher-confirms: true
       virtual-host: /
+      
+  threadpool:
+    translate:
+      corepoolsize: 8
+      maxpoolsize: 10
+      keepaliveseconds: 120
+      queuecapacity: 20
+    upload:
+      corepoolsize: 8
+      maxpoolsize: 10
+      keepaliveseconds: 120
+      queuecapacity: 20
     
 eureka:
   instance:
