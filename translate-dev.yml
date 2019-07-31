@@ -43,6 +43,11 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:8000/eureka/
 
+aliyun:
+  accesseyid: 123123
+  accesskeysecret: 456456
+  
+  
 # ===========================================================================================
 logging.level.ROOT: INFO
 logging.level.org.springframework.web: INFO
