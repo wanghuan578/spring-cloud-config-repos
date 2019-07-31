@@ -26,10 +26,10 @@ spring:
       
   threadpool:
     translate:
-      corepoolsize: 8
-      maxpoolsize: 10
+      corepoolsize: 1
+      maxpoolsize: 2
       keepaliveseconds: 120
-      queuecapacity: 20
+      queuecapacity: 1
     upload:
       corepoolsize: 8
       maxpoolsize: 10
@@ -48,7 +48,7 @@ aliyun:
   accesskeysecret: 456456
   
 translate:
-  workdir: e:/translate
+  workdir: e:/translate/
   
   
 # ===========================================================================================
