@@ -26,15 +26,15 @@ spring:
       
   threadpool:
     translate:
-      corepoolsize: 1
-      maxpoolsize: 2
+      corepoolsize: 4
+      maxpoolsize: 6
       keepaliveseconds: 120
-      queuecapacity: 1
+      queuecapacity: 10
     upload:
-      corepoolsize: 8
+      corepoolsize: 6
       maxpoolsize: 10
       keepaliveseconds: 120
-      queuecapacity: 20
+      queuecapacity: 100
     
 eureka:
   instance:
