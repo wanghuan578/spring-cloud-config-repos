@@ -47,6 +47,9 @@ aliyun:
   accesseyid: 123123
   accesskeysecret: 456456
   
+translate:
+  workdir: e:/translate
+  
   
 # ===========================================================================================
 logging.level.ROOT: INFO
